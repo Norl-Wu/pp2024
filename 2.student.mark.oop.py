@@ -112,6 +112,7 @@ while True:
                     if len(course.Mark)!=0:
                         inList=1
                         course.PrintMark()
+                        
                     else:
                         print("You haven't input mark for this course")
                         break
