@@ -1,13 +1,20 @@
 class methodManager:
+    @staticmethod
     def addToList(obj, list):
         list.append(obj)
     
+    @staticmethod
     def printList(list):
         for obj in list:
             print(obj)
     
-    def inputQuantity():
+    @staticmethod
+    def _inputQuantity():
         return int(input("Enter the quantity you want: "))
+
+    @staticmethod
+    def InputQuanity():
+        return methodManager._inputQuantity()
 class Init:
     def __init__(self):
         self.Name=input("Input student name: ")
@@ -61,7 +68,7 @@ while True:
     action = int(input("Choose your action: "))
     
     if action == 1:
-        studentNumber=methodManager.inputQuantity()
+        studentNumber=methodManager.InputQuantity()
     elif action == 2:
         if studentNumber!="":
             for i in range(studentNumber):
@@ -69,7 +76,7 @@ while True:
         else:
             print("You don't have number of student")
     elif action == 3:
-        courseNumber=methodManager.inputQuantity()
+        courseNumber=methodManager.InputQuantity()
     elif action == 4:
         if courseNumber!="":
             for i in range(courseNumber):
