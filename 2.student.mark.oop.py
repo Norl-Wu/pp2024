@@ -13,7 +13,7 @@ class methodManager:
         return int(input("Enter the quantity you want: "))
 
     @staticmethod
-    def InputQuanity():
+    def InputQuantity():
         return methodManager._inputQuantity()
 class Init:
     def __init__(self):
@@ -70,7 +70,7 @@ while True:
     if action == 1:
         studentNumber=methodManager.InputQuantity()
     elif action == 2:
-        if studentNumber!="":
+        if studentNumber>0:
             for i in range(studentNumber):
                 studentList.append(Student())
         else:
@@ -78,7 +78,7 @@ while True:
     elif action == 3:
         courseNumber=methodManager.InputQuantity()
     elif action == 4:
-        if courseNumber!="":
+        if courseNumber>0:
             for i in range(courseNumber):
                 courseList.append(Course())
         else:
