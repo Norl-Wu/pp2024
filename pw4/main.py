@@ -4,6 +4,7 @@ from domains.student import Student
 from domains.course import Course
 from input import InputNumber
 from output import PrintList
+from curses import wrapper
 
 def SelectCourse(courseList, studentList):
     if len(studentList) == 0 or len(courseList) == 0:
@@ -26,6 +27,12 @@ studentNumber = 0
 courseNumber = 0
 studentList = []
 courseList = []
+
+def main(stdscr):
+    stdscr.clear()
+    stdscr.refresh()
+    
+wrapper(main)
 
 while True:
     print("\nList of possible actions:\n \

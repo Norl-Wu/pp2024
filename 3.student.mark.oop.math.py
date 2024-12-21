@@ -1,5 +1,6 @@
 import math
 import numpy as np
+from curses import wrapper
 
 class Init:
     def __init__(self):
@@ -73,6 +74,12 @@ studentNumber = 0
 courseNumber = 0
 studentList = []
 courseList = []
+
+def main(stdscr):
+    stdscr.clear()
+    stdscr.refresh()
+    
+wrapper(main)
 
 while True:
     print("\nList of possible actions:\n \
