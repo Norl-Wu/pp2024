@@ -1,0 +1,6 @@
+ID: ict1,Name: Python,Credit: 3
+ID: ict2,Name: Math,Credit: 4
+ID: ict1,Name: Python,Credit: 3
+ID: ict2,Name: Math,Credit: 4
+ID: ict3,Name: Signal,Credit: 4
+ID: ict4,Name: Alge,Credit: 3

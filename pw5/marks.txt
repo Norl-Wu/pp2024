@@ -1,0 +1,4 @@
+Course: Python,Student name: nam,Mark:19.0
+Course: Python,Student name: vu,Mark:20.0
+Course: Signal,Student name: lmao,Mark:10.0
+Course: Signal,Student name: bruh,Mark:15.0
